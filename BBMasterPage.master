@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BBMasterPage.master.cs" Inherits="BBMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+		<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="~/Styles/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+	<!-- End css3menu.com HEAD section -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- Start css3menu.com BODY section -->
+<input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
+    <asp:Panel ID="Panel1" runat="server" BackColor="#999999">
+        <asp:label runat="server" Font-Name="calibri" Font-Size="25" ForeColor="red">Federal </asp:label>
+        <asp:Label runat="server" font-name="calibri" Font-Size="20" ForeColor="blue">Blood Bank</asp:Label>
+    </asp:Panel>
+<center>
+<ul id="css3menu1" class="topmenu">
+	<li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
+	<li class="topfirst"><a href="#" style="height:18px;line-height:18px;">Home</a></li>
+	<li class="topmenu"><a href="NewDonor.aspx" style="height:18px;line-height:18px;"><span>Donor Registration</span></a></li>
+	<li class="topmenu"><a href="ExistingDonors.aspx" style="height:18px;line-height:18px;">Current Donors</a></li>
+	<li class="topmenu"><a href="Search.aspx" style="height:18px;line-height:18px;">Search</a></li>
+	<li class="toplast"><a href="#" style="height:18px;line-height:18px;">Contact us</a></li>
+</ul><p class="_css3m"><a href="http://css3menu.com/">dhtml menu</a> by Css3Menu.com</p>
+<!-- End css3menu.com BODY section -->
+</center>
+    <div>    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
